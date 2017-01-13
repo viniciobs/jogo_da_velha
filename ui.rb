@@ -75,10 +75,10 @@ end
 
 def terminar_jogo jogador
 	puts "\nFim de Jogo!!!"
-	if fim_jogo?	
-		puts "Parabéns, #{jogador.nome}!!!\nVocê é o vencedor"
-	elsif @array_jogadas.empty?
+	if @array_jogadas.empty?
 		puts "Deu velha!!!"
+	elsif fim_jogo?	
+		puts "Parabéns, #{jogador.nome}!!!\nVocê é o vencedor"
 	end
 
 	puts "Deseja jogar de novo? (s/n)"

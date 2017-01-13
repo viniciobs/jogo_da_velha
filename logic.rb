@@ -67,7 +67,9 @@ def fim_jogo?
 			resultado = true
 		elsif @mapa[mapa] == @mapa[mapa+28] && @mapa[mapa] == @mapa[mapa+56]
 			resultado = true
-		end	
+		elsif @array_jogadas.empty?
+			resultado = true
+		end
 	end
 	
 	undo_mapa_array	

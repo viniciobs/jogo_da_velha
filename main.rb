@@ -32,7 +32,7 @@ loop do
 
 	jogador_atual = ""
 
-	while !fim_jogo? && !@array_jogadas.empty? do
+	while !fim_jogo? do
 		jogador_atual = array_players[contador_auxiliar % 2]
 		joga array_players[contador_auxiliar % 2]
 		contador_auxiliar += 1
