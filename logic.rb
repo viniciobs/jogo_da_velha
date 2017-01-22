@@ -67,6 +67,8 @@ def fim_jogo?
 			resultado = true
 		elsif @mapa[mapa] == @mapa[mapa+28] && @mapa[mapa] == @mapa[mapa+56]
 			resultado = true
+		elsif @mapa[mapa] == @mapa[mapa+20] && @mapa[mapa] == @mapa[mapa+40]
+			resultado = true
 		elsif @array_jogadas.empty?
 			resultado = true
 		end
